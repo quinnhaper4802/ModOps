@@ -6,10 +6,6 @@ This module contains methods for thresholding singular values.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.3
-
-:Date: 14/12/2017
-
 """
 
 from __future__ import division

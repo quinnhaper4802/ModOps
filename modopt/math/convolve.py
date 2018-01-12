@@ -6,10 +6,6 @@ This module contains methods for convolution.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.3
-
-:Date: 08/12/2017
-
 """
 
 from __future__ import division

@@ -6,10 +6,6 @@ This module contains wrappers for adding additional features to functions
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.0
-
-:Date: 15/12/2017
-
 """
 
 from inspect import getargspec

@@ -6,12 +6,7 @@ This module contains methods for handing object types.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.1
-
-:Date: 12/12/2017
-
 """
-
 
 import numpy as np
 from modopt.base.wrappers import add_args_kwargs

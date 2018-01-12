@@ -6,10 +6,6 @@ This module contains methods for adding and removing noise from data.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.2
-
-:Date: 04/01/2017
-
 """
 
 from builtins import zip

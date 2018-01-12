@@ -4,10 +4,6 @@ This module contains methods for testing signal and operator properties.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.2
-
-:Date: 06/12/2017
-
 """
 
 from __future__ import print_function

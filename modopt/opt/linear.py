@@ -6,10 +6,6 @@ This module contains linear operator classes.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.3
-
-:Date: 19/07/2017
-
 """
 
 from builtins import range, zip
@@ -106,9 +102,9 @@ class WaveletConvolve(LinearParent):
 
     def __init__(self, filters):
 
-        self.filters = check_float(filters)
-        self.op = lambda x: filter_convolve_stack(x, self.filters)
-        self.adj_op = lambda x: filter_convolve_stack(x, self.filters,
+        self._filters = check_float(filters)
+        self.op = lambda x: filter_convolve_stack(x, self._filters)
+        self.adj_op = lambda x: filter_convolve_stack(x, self._filters,
                                                       filter_rot=True)
 
 

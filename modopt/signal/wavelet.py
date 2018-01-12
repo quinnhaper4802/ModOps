@@ -6,10 +6,6 @@ This module contains methods for performing wavelet transformations using iSAP
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.2
-
-:Date: 20/10/2017
-
 Notes
 -----
 This module serves as a wrapper for the wavelet transformation code

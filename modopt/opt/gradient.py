@@ -7,10 +7,6 @@ Based on work by Yinghao Ge and Fred Ngole.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.3
-
-:Date: 19/07/2017
-
 """
 
 import numpy as np
