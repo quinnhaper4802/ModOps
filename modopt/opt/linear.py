@@ -6,10 +6,6 @@ This module contains linear operator classes.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.3
-
-:Date: 19/07/2017
-
 """
 
 from builtins import range, zip
@@ -87,7 +83,6 @@ class Identity(LinearParent):
 
     def __init__(self):
 
-        self.l1norm = 1.0
         self.op = lambda x: x
         self.adj_op = self.op
 
@@ -105,12 +100,14 @@ class WaveletConvolve(LinearParent):
 
     """
 
-    def __init__(self, filters):
+    def __init__(self, filters, method='astropy'):
 
-        self.filters = check_float(filters)
-        self.op = lambda x: filter_convolve_stack(x, self.filters)
-        self.adj_op = lambda x: filter_convolve_stack(x, self.filters,
-                                                      filter_rot=True)
+        self._filters = check_float(filters)
+        self.op = lambda x: filter_convolve_stack(x, self._filters,
+                                                  method=method)
+        self.adj_op = lambda x: filter_convolve_stack(x, self._filters,
+                                                      filter_rot=True,
+                                                      method=method)
 
 
 class LinearCombo(LinearParent):

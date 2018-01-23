@@ -7,10 +7,6 @@ Numpy functions.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.2
-
-:Date: 12/12/2017
-
 """
 
 from __future__ import division
@@ -140,7 +136,7 @@ def pad2d(data, padding):
         raise ValueError('Padding must be an integer or a tuple (or list, '
                          'np.ndarray) of itegers')
 
-    if padding.ndim == 1:
+    if padding.size == 1:
         padding = np.repeat(padding, 2)
 
     return np.pad(data, ((padding[0], padding[0]), (padding[1], padding[1])),

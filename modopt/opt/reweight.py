@@ -6,10 +6,6 @@ This module contains classes for reweighting optimisation implementations
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.4
-
-:Date: 14/12/2017
-
 """
 
 from __future__ import division

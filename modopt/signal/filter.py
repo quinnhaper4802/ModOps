@@ -6,10 +6,6 @@ This module contains methods for distance measurements in cosmology.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.1
-
-:Date: 20/10/2017
-
 """
 
 from __future__ import division

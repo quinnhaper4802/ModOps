@@ -6,10 +6,6 @@ This module contains methods for making plots.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.1
-
-:Date: 05/01/2017
-
 """
 
 from __future__ import print_function

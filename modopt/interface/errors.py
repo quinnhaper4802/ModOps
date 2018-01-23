@@ -6,12 +6,7 @@ This module contains methods for handing warnings and errors.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.2
-
-:Date: 23/10/2017
-
 """
-
 
 import sys
 import os

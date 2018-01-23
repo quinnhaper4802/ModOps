@@ -6,10 +6,6 @@ This module contains class implementations of various optimisation algoritms.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.5
-
-:Date: 22/12/2017
-
 NOTES
 -----
 

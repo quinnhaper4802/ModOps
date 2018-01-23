@@ -6,10 +6,6 @@ This module contains methods for adding and removing noise from data.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.2
-
-:Date: 04/01/2017
-
 """
 
 from builtins import zip
@@ -169,8 +165,9 @@ def thresh(data, threshold, threshold_type='hard'):
                          '"soft"')
 
     if threshold_type == 'soft':
-        return (np.sign(data) * (np.abs(data) - threshold) *
-                (np.abs(data) >= threshold))
+        return np.around(np.maximum((1.0 - threshold /
+                         np.maximum(np.finfo(np.float64).eps, np.abs(data))),
+                         0.0) * data, decimals=15)
 
     else:
         return data * (np.abs(data) >= threshold)

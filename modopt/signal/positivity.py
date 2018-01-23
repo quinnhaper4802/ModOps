@@ -7,10 +7,6 @@ an array
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.0
-
-:Date: 26/07/2017
-
 """
 
 import numpy as np

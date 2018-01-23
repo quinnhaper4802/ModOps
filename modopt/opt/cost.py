@@ -6,10 +6,6 @@ This module contains classes of different cost functions for optimization.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 2.2
-
-:Date: 23/10/2017
-
 """
 
 from __future__ import division, print_function

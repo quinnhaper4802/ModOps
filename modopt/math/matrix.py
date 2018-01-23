@@ -4,10 +4,6 @@ This module contains methods for matrix operations.
 
 :Author: Samuel Farrens <samuel.farrens@cea.fr>
 
-:Version: 1.3
-
-:Date: 12/12/2017
-
 """
 
 from __future__ import division
@@ -272,7 +268,7 @@ class PowerMethod(object):
 
     def __init__(self, operator, data_shape, auto_run=True):
 
-        self._op = operator
+        self._operator = operator
         self._data_shape = data_shape
         if auto_run:
             self.get_spec_rad()
@@ -310,7 +306,7 @@ class PowerMethod(object):
         # Iterate until the L2 norm of x converges.
         for i in range(max_iter):
 
-            x_new = self._op(x_old) / np.linalg.norm(x_old)
+            x_new = self._operator(x_old) / np.linalg.norm(x_old)
 
             if(np.abs(np.linalg.norm(x_new) - np.linalg.norm(x_old)) <
                tolerance):
